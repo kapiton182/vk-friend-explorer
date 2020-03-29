@@ -18,7 +18,7 @@ app.get('/sigh-in-form', (req, res) => {
 
 app.get('/oauth-vk-callback', (req, res) => {
   res.render('pages/callback-page', {
-    token: req.query
+    token: JSON.stringify(req.query)
   })
 })
 

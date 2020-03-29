@@ -18,8 +18,8 @@ app.get('/sigh-in-form', (req, res) => {
 
 app.get('/oauth-vk-callback', (req, res) => {
   res.render('pages/callback-page', {
-    token: req.query.access_token
+    token: req.query
   })
 })
 
-// https://oauth.vk.com/authorize?client_id=7380755&display=page&redirect_uri=https://vk-friend-explorer.herokuapp.com/oauth-vk-callback&scope=friends&response_type=token&v=5.103&state=123456
+// https://oauth.vk.com/authorize?client_id=7381036&display=page&redirect_uri=https://vk-friend-explorer.herokuapp.com/oauth-vk-callback&scope=friends&response_type=token&v=5.103&state=123456
